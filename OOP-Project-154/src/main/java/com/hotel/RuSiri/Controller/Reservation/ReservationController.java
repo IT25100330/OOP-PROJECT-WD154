@@ -22,7 +22,7 @@ public class ReservationController {
 
     // * BOOK ROOM // Reserve Room *
     @PreAuthorize("hasRole('USER')")
-    @PostMApping
+    @PostMapping
     public ResponseEntity<ReservationResponseDTO> bookRoom(@RequestBody ReservationRequestDTO dto) {
 
         return ResponseEntity.ok(
